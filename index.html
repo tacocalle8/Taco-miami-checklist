@@ -885,7 +885,7 @@
     }).join("");
   }
 
-  function exportCSV() {
+  $("csvFile").onchange = event => {
     const quote = value =>
       '"' + String(value ?? "").replaceAll('"', '""') + '"';
 
